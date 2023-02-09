@@ -1,0 +1,10 @@
+@media screen and (max-width: 450px) {
+    header{
+        background-image: linear-gradient(to top, #1a5c37, #2fa866);
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

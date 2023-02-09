@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body{
+    background-image: url(../imagens/pattern004.png);
+    color: #ffffff;
+}
+
+div.quadrado{
+    width: 200px;
+    height: 200px;
+
+    border: 2px solid black;
+    display: inline-block;
+}
+
+div#q1{
+    background-color: rgb(195, 130, 238);
+}
+
+div#q2{
+    background-image: linear-gradient(45deg, rgb(63, 63, 230), rgb(135, 52, 168));
+}
+
+div#q3{
+    background-image: url(../imagens/pattern001.png);
+}
+/* Essas div's não têm função semântiva! */

@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body{
+    text-align: justify;
+    margin: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1, h2{
+    font-family: 'Times New Roman', Times, serif;
+}

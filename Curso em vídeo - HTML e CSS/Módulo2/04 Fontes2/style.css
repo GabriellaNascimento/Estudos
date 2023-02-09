@@ -1,0 +1,30 @@
+    @charset "UTF-8";
+    @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+    body{
+        background-image: linear-gradient(to right, #010626, #374C8C);
+        text-align: justify;
+    }
+    main{
+        background-color: #ffffff;
+        width: 800px;
+        padding: 20px;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 10px 10px 15px #01062657;
+    }
+    h1{
+        font-size: 2.5em;
+        font-family: 'Itim', cursive;
+        color: #8B3F8C;
+        text-align: center;
+        text-shadow: 3px 3px 5px #01062670;
+    }
+    h2{
+        font: italic bolder 1.3em 'Oswald', sans-serif;;
+        color: #D952B5;
+    }
+    .pagina2{
+        text-align: right;
+    }
