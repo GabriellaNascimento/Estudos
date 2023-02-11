@@ -1,0 +1,53 @@
+h1{
+    text-align: center;
+    font-variant: small-caps;
+}
+
+table{
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    border-collapse: collapse;
+}
+
+
+tr{
+    background-color: rgba(211, 211, 211, 0.575);
+}
+.color{
+    background-color: rgba(255, 182, 193, 0.596);
+}
+
+
+td{
+    border: 1px solid black;
+    padding: 4px;
+    text-align: center;
+}
+#destaque{
+    background-color: yellow;
+}
+#destaque:hover{
+    background-color: rgba(137, 43, 226, 0.459);
+}
+/* Alinhamento horizontal */
+#left{
+    text-align: left;
+}
+#center{
+    text-align: center;
+}
+#right{
+    text-align: right;
+}
+
+/* Alinhamento vertical */
+#top{
+    vertical-align: top;
+}
+#middle{
+    vertical-align: middle;
+}
+#bottom{
+    vertical-align: bottom;
+}

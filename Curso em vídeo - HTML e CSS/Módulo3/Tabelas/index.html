@@ -5,34 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
-
-    <style>
-        h1{
-            text-align: center;
-            font-variant: small-caps;
-        }
-        table{
-            margin: auto;
-            width: 400px;
-            border-collapse: collapse;
-        }
-        tr{
-            background-color: rgba(211, 211, 211, 0.575);
-        }
-        .color{
-            background-color: rgba(255, 182, 193, 0.596);
-        }
-        td{
-            border: 1px solid black;
-            padding: 4px;
-        }
-        #destaque{
-            background-color: yellow;
-        }
-        #destaque:hover{
-            background-color: rgba(137, 43, 226, 0.459);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Trabalhando com tabelas</h1>
@@ -44,14 +17,14 @@
                 td = table data = dado de tabela -->
     <table>
         <tr>
-            <td>A1</td>
-            <td>B1</td>
-            <td>C1</td>
+            <td id="left">A1</td>
+            <td id="center">B1</td>
+            <td id="right">C1</td>
         </tr>
         <tr class="color">
-            <td>A2</td>
-            <td>B2</td>
-            <td>C2</td>
+            <td id="top">A2</td>
+            <td id="middle">B2</td>
+            <td id="bottom">C2</td>
         </tr>
         <tr>
             <td>A3</td>
