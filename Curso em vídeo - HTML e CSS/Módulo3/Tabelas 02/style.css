@@ -18,6 +18,7 @@ caption{
 }
 
 table{
+    height: 500px;
     border-collapse: collapse;
     width: 400px;
     margin: auto;

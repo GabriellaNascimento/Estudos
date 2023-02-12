@@ -1,0 +1,46 @@
+:root{
+    --corprincipal: rgba(107, 107, 107, 0.767)
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-variant: small-caps;
+    text-align: center;
+    background-color: var(--corprincipal);
+}
+
+span{
+    background-color: #fff;
+    padding: 3px 30px;
+}
+
+table{
+    width: 500px;
+    border-collapse: collapse;
+    margin: auto;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.281);
+}
+
+.cgrupo{
+    background-color: var(--corprincipal);
+}
+.cnomes{
+    background-color: rgba(137, 43, 226, 0.432);
+}
+.cfilmes{
+    background-color: rgba(0, 0, 255, 0.336);
+}
+
+caption{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+}

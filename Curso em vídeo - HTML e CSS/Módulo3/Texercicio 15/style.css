@@ -4,9 +4,10 @@ body{
 table{
     width: 500px;
     border-collapse: collapse;
+    margin: auto;
 }
 
-thead > tr > th{
+thead > tr > th, .media{
     background-color: rgba(107, 107, 107, 0.767);
     color: #fff;
 }
@@ -18,11 +19,6 @@ th, td{
 
 th{
     text-align: center;
-}
-
-.media{
-    background-color: rgba(107, 107, 107, 0.767);
-    color: #fff;
 }
 
 .media > th{
