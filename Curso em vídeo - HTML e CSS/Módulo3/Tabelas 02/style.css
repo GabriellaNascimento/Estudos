@@ -21,11 +21,18 @@ table{
     border-collapse: collapse;
     width: 400px;
     margin: auto;
+    position: relative;
 }
 
 thead, tfoot{
     background-color: rgb(104, 103, 103);
     color: #fff;
+}
+
+thead > tr > th{
+    position: sticky;
+    top: -.5px;
+    background-color: rgb(104, 103, 103);
 }
 
 td, th{
