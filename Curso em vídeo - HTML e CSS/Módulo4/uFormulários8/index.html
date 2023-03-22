@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulários</title>
+    </head>
+    <body>
+        <h1>Exemplos de formulários</h1>
+        <p>Tag OUTPUT</p>
+
+        <form method="post">
+            <fieldset>
+                <legend>Soma</legend>
+                <p>
+                    <label for="inumero1">1°Número</label>
+                    <input 
+                    type="number" 
+                    name="numero1" 
+                    id="inumero1" 
+                    required 
+                    min="0" max="60" 
+                    oninput="isoma.innerHTML = Number(inumero1.value) + Number(inumero2.value)"> 
+                </p>
+
+                <p>
+                    <label for="inumero2">2°Número</label>
+                    <input 
+                    type="number" 
+                    name="numero2" 
+                    id="inumero2" 
+                    required 
+                    min="0" max="60"
+                    oninput="isoma.innerHTML= Number(inumero1.value) + Number(inumero2.value)"
+                    >
+                </p>
+
+                <label for="isoma">Soma:</label>
+                <output name="soma" id="isoma">0</output>
+            </fieldset>
+            <fieldset>
+                <legend>Range</legend>
+                <p>
+                    <label for="inota">Nota de satisfação:</label>
+                    <input 
+                    type="range" 
+                    name="nota" 
+                    id="inota"
+                    min="0" max="10"
+                    oninput="ivalor.innerHTML= Number(inota.value)"
+                    >
+                    <output name="valor" id="ivalor">5</output>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Idade</legend>
+                <p>
+                    <label for="iano">Em que ano você nasceu?</label>
+                    <input type="number" name="ano" id="iano" min="1900" max="2023" oninput="calcidade()">
+                </p>
+                <p>
+                    Sua idade é:
+                    <output name="idade" id="iidade"></output>
+                </p>
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+
+        <script>
+            function calcidade(){
+                let data = new Date().getFullYear()
+                iidade.innerHTML= Number(data) - Number(iano.value)
+            }
+        </script>
+    </body>
+</html>
