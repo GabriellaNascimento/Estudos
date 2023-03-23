@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/* Estilo para impressão */
+
+html{
+    font-family: 'Times New Roman', Times, serif
+}
+
+header menu{
+    display: none;
+}
+
+main{
+    width: 100%;
+    font-size: 1.3em;
+}
+
+aside::after{
+    content: "Esse artigo faz parte do curso de html e css do curso em vídeo";
+}
