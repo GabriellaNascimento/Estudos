@@ -18,6 +18,23 @@ header h1{
     padding: 15px;
 }
 
+header i{
+    background-color: rgb(80, 80, 80);
+    display: block;
+    padding: 10px;
+    color: #fff;
+}
+
+header i:hover{
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+}
+
+#opçoes{
+    display: none;
+}
+
 header a{
     display: block;
     background-color: rgb(99, 98, 98);

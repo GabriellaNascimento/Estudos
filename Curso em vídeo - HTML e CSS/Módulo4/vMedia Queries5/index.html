@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="tamanho()">
     <header>
         <h1>Meu site</h1>
-        <nav>
+        <i onclick="clickmenu()"><span class="material-icons">menu</span></i>
+        <nav id="opçoes">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -28,5 +31,24 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias perspiciatis voluptatem, aspernatur atque obcaecati eos recusandae dignissimos blanditiis officia voluptatum nisi vitae velit quod adipisci sint enim aut ex facilis? Quia minus officia nam voluptatibus. Nihil non, soluta culpa illum placeat vero amet ullam nesciunt! Fugit pariatur qui corporis sed, possimus asperiores non hic repellat autem dolorem illo quas ab quaerat natus quia necessitatibus, quasi, error reiciendis dolorum quidem. Eius.</p>
         </aside>
     </main>
+
+    <script>
+        function clickmenu() {
+            if (opçoes.style.display == "none") {
+                opçoes.style.display = "block"
+            } else {
+                opçoes.style.display = "none"
+            }
+        }
+
+        function tamanho() {
+            if (window.innerWidth >= 768) {
+                opçoes.style.display = "block"
+            } else {
+                opçoes.style.display = "none"
+            }
+        }
+        
+    </script>
 </body>
 </html>
