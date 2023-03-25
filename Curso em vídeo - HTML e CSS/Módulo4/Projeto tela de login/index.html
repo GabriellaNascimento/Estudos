@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+                <!-- Espaço para a imagem -->
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+
+                <form method="post" autocomplete="on">
+                    <div class="campo">
+                        <label for="iemail">
+                            <i class="material-icons">person</i>
+                        </label>
+                        <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="Seu email">
+                    </div>
+
+                    <div class="campo">
+                        <label for="isenha">
+                            <i class="material-icons">key</i>
+                        </label>
+                        <input type="password" name="senha" id="isenha" required minlength="8" autocomplete="current-password" placeholder="Sua senha">
+                    </div>
+
+                    <input type="submit" value="Enviar">
+                    <a href="#">
+                        Esqueci a senha <i class="material-icons" id="esqueciasenha">mail</i>
+                    </a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
