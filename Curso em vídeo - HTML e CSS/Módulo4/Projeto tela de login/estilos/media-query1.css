@@ -6,7 +6,7 @@
     --cor2: #54C495;
 }
 
-@media screen and (orientation:landscape) and (max-width: 740px){
+@media screen and (orientation:landscape) and (max-width: 758px){
     main{
         background-image: linear-gradient(to top, #C47668, #78524C);
     }
@@ -45,7 +45,7 @@
 
     section{
         width: 80vw;
-        height: 370px;
+        height: 335px;
     }
     
     section div#imagem{

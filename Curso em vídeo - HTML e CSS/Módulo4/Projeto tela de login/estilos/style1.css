@@ -28,7 +28,7 @@ main{
 
 section{
     background-color: var(--corsection);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
 
     position: absolute;
     top: 50%;
@@ -36,7 +36,7 @@ section{
 
     border-radius: 20px;
     width: 250px;
-    height: 570px;
+    height: 610px;
     overflow: hidden;
     transform: translate(-50%, -50%); /* Colocar animações sempre no final das declarações no seletor */
 }
