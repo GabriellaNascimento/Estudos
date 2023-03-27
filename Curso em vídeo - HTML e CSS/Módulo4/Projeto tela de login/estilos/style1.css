@@ -2,6 +2,12 @@
 
 /* Mobile First */
 
+:root{
+    --corsection: #E4EBF3;
+    --cor1: #4C7865;
+    --cor2: #54C495;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -21,7 +27,7 @@ main{
 }
 
 section{
-    background-color: #E4EBF3;
+    background-color: var(--corsection);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);
 
     position: absolute;
@@ -48,6 +54,8 @@ div#formulario{
 div#formulario > h1{
     text-align: center;
     margin-bottom: 10px;
+    font-size: 2em;
+    text-shadow: 1px 1px 3px #02020257;
 }
 
 div#formulario > p{
@@ -56,11 +64,11 @@ div#formulario > p{
 
 div#formulario .campo{
     border-radius: 7px;
-    background-color: #4C7865;
+    background-color: var(--cor1);
     margin: 5px 0px ;
     height: 42px;
     overflow: hidden;
-    border: 1px solid #4C7865;
+    border: 1px solid var(--cor1);
 }
 
 div#formulario .material-icons{
@@ -68,11 +76,11 @@ div#formulario .material-icons{
     margin-top: 4px;
     padding: 0px 3px ;
     width: 36px;
-    color: #E4EBF3;
+    color: var(--corsection);
 }
 
 div#formulario .inputcampo{
-    background-color: #E4EBF3;
+    background-color: var(--corsection);
     border: none;
     width: calc(100% - 40px);
     border-radius: 7px;
@@ -83,7 +91,7 @@ div#formulario .inputcampo{
 
 div#formulario input[type= submit]{
     border-radius: 10px;
-    background-color: #54C495;
+    background-color: var(--cor2);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.288);
     display: block;
     width: 100%;
@@ -92,7 +100,7 @@ div#formulario input[type= submit]{
 }
 
 div#formulario input[type= submit]:hover{
-    background-color: #4C7865;
+    background-color: var(--cor1);
     transition-duration: .4s;
     cursor: pointer;
 }
