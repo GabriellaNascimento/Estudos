@@ -1,5 +1,42 @@
 @charset "UTF-8";
 
+:root{
+    --corsection: #E4EBF3;
+    --cor1: #4C7865;
+    --cor2: #54C495;
+}
+
+@media screen and (orientation:landscape) and (max-width: 740px){
+    main{
+        background-image: linear-gradient(to top, #C47668, #78524C);
+    }
+
+    section{
+        width: 90vw;
+        height: 70%;
+        overflow-y: scroll;
+        border-radius: 10px;
+        position: relative;
+    }
+    
+    section::-webkit-scrollbar{
+        border-radius: 20px;
+        width: 13px;
+        background-color: rgba(0, 0, 0, 0.185);
+    }
+
+    section::-webkit-scrollbar-thumb{
+        background-color: var(--cor1);
+        border-radius: 20px;
+        margin: 10px;
+    }
+
+    section div#imagem{
+        display: none;
+    }
+}
+
+
 /* Tablet: 760px - 992px */
 @media screen and (min-width: 760px) and (max-width: 992px){
     main{
