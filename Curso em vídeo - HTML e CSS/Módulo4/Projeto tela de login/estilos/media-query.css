@@ -12,45 +12,48 @@
 
 }
 
+/* Declaração para tablet */
 @media screen and (min-width: 768px) and (max-width:992px){
     body{
         background-image: linear-gradient(to top, var(--corbackground1), var(--corbackground2));
     }
 
-    section#login{
+    section{
         width: 80vw;
         height: 400px;
     }
 
-    section#login > div#imagem{
-        float: left;
+    /* Propriedade FLOAT - elemento do lado esquedo ou direito do seu containêr */
+    section > div#imagem{
+        float: left; 
         width: 30%;
         height: 100%;
     }
 
-    section#login > div#formulario{
+    section > div#formulario{
         float: right;
         width: 70%;
     }
 }
 
+/* Declaração para desktop e tv (Telas grandes) */
 @media screen and (min-width: 992px) {
     body{
         background-image: linear-gradient(to top, var(--corbackground1), var(--corbackground2));
     }
     
-    section#login{
+    section{
         width: 800px;
         height: 400px;
     }
 
-    section#login > div#imagem{
+    section > div#imagem{
         float: right;
         width: 40%;
         height: 100%;
     }
 
-    section#login > div#formulario{
+    section > div#formulario{
         float: left;
         width: 60%;
     }
