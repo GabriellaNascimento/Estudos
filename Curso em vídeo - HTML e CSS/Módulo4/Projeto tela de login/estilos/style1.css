@@ -33,16 +33,17 @@ section{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
 
     border-radius: 20px;
     width: 250px;
     height: 570px;
     overflow: hidden;
+    transform: translate(-50%, -50%); /* Colocar animações sempre no final das declarações no seletor */
 }
 
 div#imagem{
     background: black url(../imagem/pexels.jpg) center center no-repeat;
+    /* Shorthand background: cor imagem posição repetir attachment */
     background-size: cover;
     height: 200px;
 }
@@ -64,11 +65,11 @@ div#formulario > p{
 
 div#formulario .campo{
     border-radius: 7px;
+    border: 1px solid var(--cor1);
     background-color: var(--cor1);
     margin: 5px 0px ;
     height: 42px;
     overflow: hidden;
-    border: 1px solid var(--cor1);
 }
 
 div#formulario .material-icons{
@@ -85,8 +86,8 @@ div#formulario .inputcampo{
     width: calc(100% - 40px);
     border-radius: 7px;
     height: 100%;
-    transform: translateY(-12px);
     padding: 5px;
+    transform: translateY(-12px);
 }
 
 div#formulario input[type= submit]{
