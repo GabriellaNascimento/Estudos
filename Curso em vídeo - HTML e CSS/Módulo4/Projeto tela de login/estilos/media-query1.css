@@ -6,6 +6,7 @@
     --cor2: #54C495;
 }
 
+/* Declarações para celulare deitado */
 @media screen and (orientation:landscape) and (max-width: 758px){
     main{
         background-image: linear-gradient(to top, #C47668, #78524C);
@@ -19,6 +20,7 @@
         position: relative;
     }
     
+    /* barra de rolagem */
     section::-webkit-scrollbar{
         border-radius: 20px;
         width: 13px;
