@@ -8,26 +8,30 @@
 </head>
 <body>
     <h1>Sistema de multas</h1>
+
     <div>
         Velociade do carro:
         <input type="number" name="vel" id="ivel">
         km/h
         <input type="button" value="Verificar" onclick="verificar()">
     </div>
+
     <p id="res">Resultado:</p>
     <p id="multa"></p>
     <p id="aviso"></p>
+ 
 
     <script>
         function verificar(){
             var velocidade = Number(document.querySelector('input#ivel').value)
-    
-            res.innerText = `Sua velociade é de ${velocidade}`
+            
+            multa.innerText = ''
+            res.innerText = `Sua velociade é de ${velocidade} Km/h`
             if (velocidade >= 60) {
                 multa.innerText = 'Você está MULTADO por excesso de velocidade!'
             }
-
             aviso.innerText = 'Dirija sempre com cinto de segurança!'
+
         }
     </script>
 </body>
