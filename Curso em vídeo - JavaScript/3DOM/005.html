@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventps DOM</title>
+    <style>
+        div#botao{
+            margin: auto;
+            width: 300px;
+            height: 300px;
+
+            background-color: blue;
+            line-height: 300px;
+            text-align: center;
+            font-size: 40px;
+        }
+        div#botao:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="botao">
+        <p>&lt; Interaja... &gt;</p>
+    </div>
+
+    <script>
+        var area = document.getElementById('botao')
+        var conteudo = document.querySelector('div>p')
+
+        area.addEventListener('click', clicou)
+        area.addEventListener('mouseover', entrou)
+        area.addEventListener('mouseleave', saiu)
+
+        function clicou() {
+            conteudo.innerText = 'Clicou...'
+            area.style.background = 'lightgreen'
+        }
+
+        function entrou() {
+            conteudo.innerText = 'Entrou'
+            area.style.background = 'lightblue'
+
+        }
+
+        function saiu() {
+            conteudo.innerText = 'Saiu'
+            area.style.background = 'lightyellow'
+        }
+    </script>
+</body>
+</html>

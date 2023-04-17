@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM</title>
+    </head>
+    <body>
+        <h1>Aprendendo DOM</h1>
+        <p class="paragrafo">Árvore DOM</p>
+        <p class="paragrafo">Como selecionar elementos</p>
+        <script>
+            var p1 = document.getElementsByTagName('p')[0] //O plural em 'Elements' torna o [n°] obrigatório
+            document.write(p1.innerText)
+
+            var corpo = document.body //O body não precisa do seletor acima
+            corpo.style.background = 'lightblue'
+            
+            document.write('. Essa é a sua URL: ' + document.URL)
+            
+            /*
+            innerText x innerHTML
+            innerText - escreve apenas o texto sem as filhas, formatações;
+            innerHTML - escreve o texto com todas as formatações.
+            */
+        </script>
+    </body>
+    
+</html>
