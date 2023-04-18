@@ -5,17 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercícios - JS</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        section{
+            text-align: left;
+            padding-top: 5px;
+        }
+
+        form > div{
+            margin: 20px 0px;
+        }
+
+        input[type= button]{
+            padding: 3px;
+            width: 100px;
+            border-radius: 20px;
+            cursor: pointer;
+            border: 2px solid lightblue;
+            margin-bottom: 5px;
+        }
+
+        input[type= button]:hover{
+            transform: translateX(1px);
+            transition-duration: .3s;
+        }
+
+        div#campo_img{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1></h1>
+        <h1>Verificador de idade</h1>
     </header>
     <section>
-        <div></div>
-        <div></div>
+        <form>
+            <div>
+                <label for="inascimento">Ano de nascimento:</label>
+                <input type="number" name="nascimento" id= "inascimento" required min="1910" max="2023">
+            </div>
+            <div>
+                Sexo:
+                <input type="radio" name="sexo" id="masculino" checked>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" id="feminino">
+                <label for="feminino">Feminino</label> 
+            </div>
+            <input type="button" value="Verificar" onclick="verificar()">
+        </form>
+
+        <div style="text-align: center;">
+        <p id="resultado" ></p>
+        <img src="" alt="" id="img">
+        </div>
+
+        <p id="mensagem">Preencha os dados acima para ver o resultado!</p>
+
     </section>
     <footer>
         <p>&copy;Gabriella Nascimento</p>
     </footer>
+
+    <script src="013.js"></script>
 </body>
 </html>
