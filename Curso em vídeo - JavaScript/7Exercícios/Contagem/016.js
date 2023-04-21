@@ -3,6 +3,7 @@ function Contar() {
     var i_fim = document.querySelector('input#n_fim').value
     var i_passo = document.querySelector('input#n_passo').value
 
+    // Valor do input number em string para poder contar a quantidade de caracteres
     var inicio = i_inicio.toString()
     var fim = i_fim.toString()
     var passo = i_passo.toString()
@@ -10,8 +11,11 @@ function Contar() {
     var mensagem = document.querySelector('p#mensagem')
     var resultado = document.querySelector('p#resultado')
 
+    // Uma forma de usar emojis pelo js
     var emoji = '&#x1F449;'
     var emoji_fim = '&#x1F3C1;'
+    /* Tem também:
+        - Entre crase `/u{código}`*/
 
 
     if(inicio.length = 0 || fim.length == 0 || passo.length == 0) {
@@ -39,6 +43,7 @@ function Contar() {
                     mensagem.innerHTML = '[ERRO] Confira os dados: <br>'
                     mensagem.innerHTML += '- O número do passo não pode ser maior do que o número final'
                 }else{
+                    // for(variável ; condição ; incremento)
                     for (var i = n_inicio; i <= n_fim; i += n_passo) {
     
                     resultado.innerHTML += i
