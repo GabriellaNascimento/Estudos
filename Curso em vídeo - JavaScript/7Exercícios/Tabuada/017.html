@@ -1,0 +1,39 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - Contagem</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        div#numero{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+    <section id="conteudo">
+        <div id="numero">
+            <label for="inumero">Número: </label>
+            <input type="number" name="numero" id="inumero">
+            <input type="button" value="Gerar Tabuada" onclick="Gerar()">
+        </div>
+        <div>
+            <select name="tabuada" id="itabuada" size="11">
+                <option value="" disabled>Digite um número acima</option>
+                <!--como se fosse o placeholder da tag select
+                Colocar o 'disabled'-->
+            </select>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Gabriella Nascimento</p>
+    </footer>
+
+    <script src="017.js"></script>
+</body>
+
+</html>
