@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    text-align: center;
+    background-color: rgba(144, 238, 144, 0.801);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    margin: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.521);
+}
+
+section{
+    background-color: #fff;
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.199);
+    text-align: left;
+}
+
+section > div{
+    margin: 10px 0px;
+}
+
+section input[type= button]{
+    padding: 0px 10px;
+    border-radius: 5px;
+    border: 1px solid lightgreen;
+    cursor: pointer;
+}
+
+select{
+    width: 150px;
+}
