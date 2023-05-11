@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Array</title>
+    </head>
+    <body>
+        <script>
+            //Formas de criar um array:
+                /*var cor = new Array()
+                cor.push(4)
+                document.write(cor[0])*/
+
+                var cor = [' Branco ',9, ' Preto ', 15]
+                //document.write(cor) - Branco ,9, Preto ,15
+
+            //Métodos de inserção:
+                cor.push(' Azul ') //.push() - insere elementos no fim do array
+                //document.write(cor) - Branco ,9, Preto ,15, Azul
+
+                cor[2] = 'Vermelho' //Adiciona ou modifica um determindo índice
+                //document.write(cor) - Branco ,9,Vermelho,15, Azul
+
+                cor.unshift('Rosa') // .unshift - insere elementos no início do array
+                //document.write(cor) - Rosa, Branco ,9,Vermelho,15, Azul
+            
+            //Métodos de remoção:
+                cor.pop() // .pop() - remove do final do array
+                //document.write(cor) - Rosa, Branco ,9,Vermelho,15
+
+                cor.shift() // .shift() - remove do início do array
+                //document.write(cor) - Branco ,9,Vermelho,15
+
+                cor.splice(3,1) //.splice() - a partir do 3° elemento quero remover 1 elemento
+                //document.write(cor) - Branco ,9,Vermelho
+            //Outros métodos:
+                console.log(cor.indexOf(' Branco ')) //.indexOf() - busca um elemento dentro de um array
+
+                //.sort() - ordenação
+
+                //.reverse() - inverte a ordem
+
+                /*.concat()
+                var = mochila1, mochila2
+                mochilas = mochila1.concat(mochila2) */
+
+                //.join()
+                //.lenght 
+                console.log(cor.length)
+
+        </script>
+    </body>
+</html>
