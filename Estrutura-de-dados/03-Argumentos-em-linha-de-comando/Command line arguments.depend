@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1717513265 source:c:\users\gabi\documents\faculdade\estrutura de dados\command line arguments\main.c
+	<stdio.h>
+	<stdlib.h>
+

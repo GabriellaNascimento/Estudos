@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1717421423 source:c:\users\gabi\documents\faculdade\estrutura de dados\endianness_check\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+
