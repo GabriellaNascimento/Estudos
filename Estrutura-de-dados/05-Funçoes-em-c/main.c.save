@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <locale.h>
+//#include <stdlib.h>
+
+//PASSAGEM DE PARÂMETROS, POR REFERÊNCIA, PARA FUNÇÕES
+/*Função simples de soma e subtração de dois valores predefinidos para entender como funciona a passagem
+de parãmetros por referência para funções -> Conceitos de pon
+
+int soma_e_sub(int x, int y, int* z){ //O tipo do endereço é um ponteiro que aponta para um inteiro
+    *z = x + y; //conceito de ponteiros
+    return y-x;
+}
+int main(){
+    setlocale(LC_ALL, "Portuguese");
+    int a = 10;
+    int b = 30;
+    int soma; //Armazenamento de lixo de memória
+
+    int res = soma_e_sub(a, b, &soma); //passagem de uma cópia das duas variáveis definidade e do endereço de c
+
+    printf("A soma de %d e %d é %d\n", a, b, soma);
+    printf("A subtração de %d e %d é %d", b, a, res);
+
+    return 0;
+}
