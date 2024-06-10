@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1718056184 source:c:\users\gabi\documents\github\estudos\estrutura-de-dados\alocacao dinamica\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+

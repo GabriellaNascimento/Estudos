@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h> //Usando Malloc e Calloc
+#include <locale.h> //setlocale
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+    //Alocação estática
+    puts("\tAlocação estática");
+    int vetor[3] = {10, 9 ,24}; //É um pseudoponteiro
+
+    printf("&vetor = %p, vetor = %p\n", &vetor, vetor);
+
+    int i;
+    for(i = 0; i < 3; i++){
+        printf("vetor[%d] = %d, (vetor + %d) = %p\n", i, vetor[i], i, (vetor + i));
+    }
+
+    //Alocação dinâmica usando Malloc
+    puts("\n\tAlocação dinâminca");
+    puts("Malloc");
+    //Inicializa com "lixo de memória"
+    float *v_malloc = (float *)malloc(3 * sizeof(float));
+
+    //Aqui, v_malloc é um ponteiro e armazena o valor do primeiro endereço na heap
+    printf("&v_malloc = %p, v_malloc = %p\n", &v_malloc, v_malloc); //Diferente da estática, aqui são diferentes
+
+
+    int p;
+    for(p = 0; p < 3; p++){
+        printf("v_malloc[%d] = %f, (v_malloc + %d) = %p\n", p, v_malloc[p], p, (v_malloc + p));
+    }
+
+    //Alocação dinãmica usando Calloc
+    puts("Calloc");
+    //Inicializa com o valor 0 do tipo
+    char *v_calloc = (char *)calloc(3, sizeof(char));
+
+    printf("&v_calloc = %p, v_calloc = %p", &v_calloc, v_calloc);
+
+    int l;
+    for(l = 0; l < 3; l++){
+        printf("v_calloc[%d] = %c, (v_calloc + %d) = %p\n"", l, v_calloc[l], l, v_calloc + l);
+    }
+    return 0;
+}
