@@ -2,6 +2,20 @@
 #include <stdlib.h> //Usando Malloc e Calloc
 #include <locale.h> //setlocale
 
+/*
+void DesalocaVetor(int *v){
+    free(v);
+    v = NULL;
+};
+Não funciona pois apenas a copia feita na stack irá receber o valor NULL
+O ponteiro passado como parâmetro continuará apontando para a região na heap
+*/
+
+void DesalocaVetor(int **v){//É necessário passar o endereço do ponteiro para a heap
+    free(*v); //Desaloca o que está armazenado na heap
+    *v = NULL; //Sem isso, o vetor é desalocado, mas na stack continua apontando para o endereço da heap
+}
+
 int main()
 {
     setlocale(LC_ALL, "Portuguese");
@@ -43,5 +57,17 @@ int main()
     for(l = 0; l < 3; l++){
         printf("v_calloc[%d] = %d, &v_calloc[%d] = %p\n", l, v_calloc[l], l, v_calloc + l);
     }
+
+    //Desalocar e mudar o conteúdo de um vetor
+    //Antes da função
+    puts("\n\tAntes de desalocar o vetor:");
+    printf("&v_calloc = %p, v_calloc = %p\n", &v_calloc, v_calloc);
+
+    DesalocaVetor(&v_calloc); //É necessário passar o endereço do ponteiro como parâmetro
+
+    //Depois da função
+    puts("\n\tDepois de desalocar o vetor:");
+    printf("&v_calloc = %p, v_calloc = %p\n", &v_calloc, v_calloc);
+
     return 0;
 }
