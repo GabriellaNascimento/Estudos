@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1718329758 source:c:\users\gabi\documents\github\estudos\estrutura-de-dados\08-matrizes\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+
